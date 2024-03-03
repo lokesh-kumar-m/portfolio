@@ -9,18 +9,20 @@ const Contact= () =>{
            <div className="contact__container container grid">
             <div className="contact__content">
                 <h3 className="contact__title">
-
+                
                 </h3>
-                <div className="contact__infor">
+                <div className="contact__info">
                     <div className="contact__card">
                         <i className="uil uil-fast-mail"></i>
 
                         <h3 className="contact__card-title">Email</h3>
                         <span className="contact__card-data">mekalalokesh1999@gmail.com</span>
-                        <a href="mailto:mekalalokesh1999@gmail.com.com" className="contact__button">
+                        {/*
+                            <a href="mailto:mekalalokesh1999@gmail.com.com" className="contact__button">
                             Write to me{" "} 
                             <i className="uil uil-arrow-right conact__button-icon"></i>
                         </a>
+                        */}
                     </div>
                     
                     <div className="contact__card">
@@ -39,7 +41,7 @@ const Contact= () =>{
                 <form action="" className="contact__form">
 
                     <div className="contact__form-div">
-                        <label htmlFor="" className="contact__form-tag">name</label>
+                        <label className="contact__form-tag">name</label>
                         <input 
                         type="text" 
                         className="contact__form-input" 
@@ -47,7 +49,7 @@ const Contact= () =>{
                     </div>
 
                     <div className="contact__form-div">
-                        <label htmlFor="" className="contact__form-tag">Mail</label>
+                        <label className="contact__form-tag">Mail</label>
                         <input 
                         type="email" 
                         name="email" 
@@ -56,10 +58,19 @@ const Contact= () =>{
                     </div>
                     
                     <div className="contact__form-div">
-                        <label htmlFor="" className="contact__form-tag">Message</label>
-                        <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                        <label className="contact__form-tag">Message</label>
+                        <textarea 
+                        name="Message" 
+                        cols="30" 
+                        rows="10" 
+                        className="contact__form-input">
+                        </textarea>
                     </div>
-                    
+                    <button className="button button--flex">
+                        <span className="hello">Send</span>
+                            {"  "}
+                        <i className="uil uil-message button__icon"></i>
+                    </button>
                 </form>
             </div>
 
