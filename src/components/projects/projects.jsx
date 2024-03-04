@@ -29,16 +29,17 @@ const Projects=()=>{
                     <div className={toggle===1 ? "project__modal active-modal" : "project__modal"}>
                         <div className="project__modal-content">
                             <i className="uil uil-times project__modal-close" onClick={()=>toggleTab(0)}></i>
-                            <h3 className="project__modal-title">One</h3>
+                            <h3 className="project__modal-title">Webanno</h3>
                             <p className="project__modal-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo, laboriosam nesciunt animi voluptate dignissimos natus possimus asperiores ea! Aperiam minima perferendis repellendus. Magnam rem quia nobis illum libero nihil.
+                                Evaluated the maintainablity of an open-source software and refactored 5% code. 
+                                Enhanced the implementation of an existing feature.
                             </p>
                             <ul className="project__modal-services grid">
                                 <li className="project__modal-service">
                                     <i className="uil uil-check-circle project__modal-icon">   
                                     </i>
                                     <p className="project__modal-info">
-                                        Webanno
+                                        Lead Developer
                                     </p>
                                 </li>
 
@@ -46,7 +47,7 @@ const Projects=()=>{
                                     <i className="uil uil-check-circle project__modal-icon">   
                                     </i>
                                     <p className="project__modal-info">
-                                        Video Rental Service
+                                        Git, JavaScript, Java, SonarCloud
                                     </p>
                                 </li>
 
@@ -54,15 +55,10 @@ const Projects=()=>{
                                     <i className="uil uil-check-circle project__modal-icon">   
                                     </i>
                                     <p className="project__modal-info">
-                                        Banking Application 
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">   
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Catering Expenditure
+                                       Used a static code analysis tool called sonarCloud to find bugs code smells, 
+                                       security threats and bad coding practices. We hand-picked few bugs,code smells,
+                                       security threats and evaluated them for false positives. We improved the 
+                                       functionality of a feature which improves the user interface of the application.
                                     </p>
                                 </li>
                             </ul>
@@ -74,7 +70,7 @@ const Projects=()=>{
                     <div>
                         <i className="uil uil-folder-open project__icon"></i>
                         <h3 className="project__title">
-                            Video Rental Service
+                            Catering Expenditure System
                         </h3>
                     </div>
                     <span className="project__button" onClick={()=>toggleTab(2)}>
@@ -85,16 +81,18 @@ const Projects=()=>{
                     <div className={toggle===2 ? "project__modal active-modal" : "project__modal"}>
                         <div className="project__modal-content">
                             <i className="uil uil-times project__modal-close" onClick={()=>toggleTab(0)}></i>
-                            <h3 className="project__modal-title"> Two</h3>
+                            <h3 className="project__modal-title"> Catering Expenditure System</h3>
                             <p className="project__modal-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo, laboriosam nesciunt animi voluptate dignissimos natus possimus asperiores ea! Aperiam minima perferendis repellendus. Magnam rem quia nobis illum libero nihil.
+                                An intelligent decisions support system to predict the 
+                                catering expenditure by using machine learning technoques. 
+                                Estimates the overall food wastage and the amount of food to be prepared less.
                             </p>
                             <ul className="project__modal-services grid">
                                 <li className="project__modal-service">
                                     <i className="uil uil-check-circle project__modal-icon">   
                                     </i>
                                     <p className="project__modal-info">
-                                        Webanno
+                                        Scrum Master, Developer
                                     </p>
                                 </li>
 
@@ -102,23 +100,7 @@ const Projects=()=>{
                                     <i className="uil uil-check-circle project__modal-icon">   
                                     </i>
                                     <p className="project__modal-info">
-                                        Video Rental Service
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">   
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Banking Application 
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">   
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Catering Expenditure
+                                        PowerBI, Machine learning, Trello board
                                     </p>
                                 </li>
                             </ul>
@@ -141,40 +123,17 @@ const Projects=()=>{
                     <div className={toggle===3 ? "project__modal active-modal" : "project__modal"}>
                         <div className="project__modal-content">
                             <i className="uil uil-times project__modal-close" onClick={()=>toggleTab(0)}></i>
-                            <h3 className="project__modal-title">Three</h3>
+                            <h3 className="project__modal-title">Banking Application</h3>
                             <p className="project__modal-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo, laboriosam nesciunt animi voluptate dignissimos natus possimus asperiores ea! Aperiam minima perferendis repellendus. Magnam rem quia nobis illum libero nihil.
+                                Application that provides banking services such as fetching account balance, 
+                                withdrawing money, and depositing money with user-authentication.
                             </p>
                             <ul className="project__modal-services grid">
                                 <li className="project__modal-service">
                                     <i className="uil uil-check-circle project__modal-icon">   
                                     </i>
                                     <p className="project__modal-info">
-                                        Webanno
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">   
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Video Rental Service
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">   
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Banking Application 
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">   
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Catering Expenditure
+                                        Java Swings, MySql, Docker
                                     </p>
                                 </li>
                             </ul>
