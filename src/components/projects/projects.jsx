@@ -11,7 +11,7 @@ const Projects=()=>{
     return(
         <section className="projects section" id="projects">
            <h2 className="section__title">Projects</h2> 
-           <span className="section__text">My personal Projects</span>
+           <span className="section__subtext">My personal Projects</span>
 
            <div className="projects__container container grid">
                 <div className="projects__content">

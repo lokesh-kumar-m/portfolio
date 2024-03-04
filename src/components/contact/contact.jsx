@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css'
 
 const Contact= () =>{
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_nd8125a', 'template_dnvne49', form.current, {
+        publicKey: '8i8zTbirFyM5wihSm',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    };
+
     return(
         <section className="contact" id="contact">
            <h2 className="section__title">Contact Me</h2> 
-           <span className="section__subtitle">Get in touch</span>
+           <span className="section__subtext">Get in touch</span>
            <div className="contact__container container grid">
             <div className="contact__content">
                 <h3 className="contact__title">
@@ -38,12 +57,13 @@ const Contact= () =>{
 
             <div className="contact__content">
                 <h3 className="contact__title">Write to me</h3>
-                <form action="" className="contact__form">
+                <form ref={form} onSubmit={sendEmail} className="contact__form">
 
                     <div className="contact__form-div">
                         <label className="contact__form-tag">name</label>
                         <input 
                         type="text" 
+                        name="name"
                         className="contact__form-input" 
                         placeholder="Your Name"/>
                     </div>
@@ -66,7 +86,7 @@ const Contact= () =>{
                         className="contact__form-input">
                         </textarea>
                     </div>
-                    <button className="button button--flex">
+                    <button className="button button--flex" type='submit'>
                         <span className="hello">Send</span>
                             {"  "}
                         <i className="uil uil-message button__icon"></i>
