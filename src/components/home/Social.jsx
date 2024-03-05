@@ -9,7 +9,7 @@ const Social = () =>{
             <a href="https://github.com/" className="home__social-icon" target="_blank" rel="noreferrer">
                 <i className="uil uil-github"></i>
             </a>
-            <a href="https://www.instagram.com/" className="home__social-icon" target="_blank" rel="noreferrer">
+            <a href="https://leetcode.com/dotme/" className="home__social-icon" target="_blank" rel="noreferrer">
                 <i className="uil uil-brackets-curly"></i>
             </a>
         </div>
