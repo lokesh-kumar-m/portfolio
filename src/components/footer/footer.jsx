@@ -24,7 +24,7 @@ const Footer= () => {
                     <a href="https://www.linkedin.com/in/lokesh-mekala-648a761a5" className="home__social-icon" target="_blank" rel="noreferrer">
                         <i className="uil uil-linkedin"></i>
                     </a>
-                    <a href="https://dribbble.com/theunfilleddot" className="home__social-icon footer-icon" target="_blank" rel="noreferrer">
+                    <a href="https://dribbble.com/LokeshMekala" className="home__social-icon footer-icon" target="_blank" rel="noreferrer">
                         <i className="uil uil-dribbble"></i>
                     </a>
                 </div>
