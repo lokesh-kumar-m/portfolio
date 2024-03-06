@@ -11,14 +11,7 @@ const Contact= () =>{
     emailjs.sendForm('service_nd8125a', 'template_dnvne49', form.current, {
         publicKey: '8i8zTbirFyM5wihSm',
       })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+      e.target.reset();
     };
 
     return(
