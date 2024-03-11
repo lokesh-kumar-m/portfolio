@@ -30,6 +30,9 @@
 .footer__social a{
     color: white;
 }
-.footer-icon:hover{
+.linkedin-icon:hover{
+    color: rgb(71, 115, 218);
+}
+.dribble-icon:hover{
     color: rgb(243, 142, 204);
 }

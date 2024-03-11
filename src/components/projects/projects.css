@@ -89,6 +89,10 @@
 .project__modal-services{
     row-gap: 0.75rem;
 }
+.project__modal-service a{
+    text-decoration: none;
+    color: black;
+}
 .project__modal-service{
     display: flex;
     align-items: center;
