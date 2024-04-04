@@ -37,9 +37,7 @@
 .project__button:hover .project__button-icon{
     transform: translateX(0.25rem);
 }
-.project__modal{
-    display: none;
-}
+
 .project__modal{
     position: fixed;
     top: 0;

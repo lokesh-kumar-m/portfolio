@@ -13,6 +13,10 @@
     border-radius: 1.5rem;
     justify-self: center;
 }
+
+.about__data> a{
+    margin-bottom: 1rem;
+}
 .about__info{
     grid-template-columns: repeat(3,140px);
     gap:0.5rem;
@@ -20,12 +24,74 @@
 }
 .about__box{
     background-color: var(--container-color);
-     border: 1px solid rgb(63, 62, 62);
-     border-radius: 0.75rem;
-     text-align: center;
-     padding: 1rem 1.25rem;
+    border: 1px solid rgb(63, 62, 62);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
 }
+.interests__box{
+    background-color: var(--container-color);
+    border: 1px solid rgb(63, 62, 62);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+.interest__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.242);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.Coding__interest{
+    opacity: 1;
+    visibility: visible;
+}
+.interest__card{
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+.card__close{
+    float: right;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    font-size: var(--h2-font-size);
+}
+.card__close:hover{
+    color: rgb(246, 77, 77);
+    cursor: pointer;
+}
+
+
+.card__part-1{
+    margin-bottom: 1rem;
+}
+.card__part-1 img{
+    width: 70%;
+    margin-left: 15%;
+}
+.coding__interest-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .about__title{
+    text-align:center;
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }

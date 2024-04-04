@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Project from "./project";
 import './projects.css';
 
 const Projects = () => {
@@ -14,187 +14,47 @@ const Projects = () => {
             <span className="section__subtext">My personal Projects</span>
 
             <div className="projects__container container grid">
-                <div className="projects__content">
-                    <div>
-                        <i className="uil uil-folder-open project__icon"></i>
-                        <h3 className="project__title">
-                            Webanno
-                        </h3>
-                    </div>
-                    <span className="project__button" onClick={() => toggleTab(1)}>
-                        Read More{" "}
-                        <i className="uil uil-arrow-right project__button-icon"></i>
-                    </span>
 
-                    <div className={toggle === 1 ? "project__modal active-modal" : "project__modal"}>
-                        <div className="project__modal-content">
-                            <i className="uil uil-times project__modal-close" onClick={() => toggleTab(0)}></i>
-                            <h3 className="project__modal-title">Webanno</h3>
-                            <p className="project__modal-description">
-                                Evaluate the maintainability of an open-source software, refactored 
-                                the code, and improved the implementation of an existing feature.
-                            </p>
-                            <ul className="project__modal-services grid">
-                                <li className="project__modal-service">
-                                    <i className="uil uil-code-branch project__modal-icon">
-                                    </i>
-                                    <a href="https://github.com/lokesh-kumar-m/webanno" className="project__modal-info">
-                                        GitHub code link
-                                    </a>
-                                </li>
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Team Lead, Lead Developer
-                                    </p>
-                                </li>
+                <Project
+                    title={"Webanno"}
+                    toggleTab={toggleTab}
+                    num={1}
+                    toggle={toggle}
+                    desc={"Evaluate the maintainability of an open-source software, refactored the code, and improved the implementation of an existing feature."}
+                    link={"https://github.com/lokesh-kumar-m/webanno"}
+                    ponits={[" Team Lead, Lead Developer","Identified code smells,security issues ans bugs. Enhanced UI functionality for improved user experience.","Git, JavaScript, Java, SonarCloud, Maven"]}
+                />
 
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                    Identified code smells,security issues ans bugs. Enhanced UI functionality for improved user experience.
-                                    </p>
-                                </li>
+                <Project
+                    title={"Bills and Expense Manager"}
+                    toggleTab={toggleTab}
+                    num={2}
+                    toggle={toggle}
+                    desc={"Application with user Authentication to manage expenses, share bills between people and record transactions"}
+                    link={"https://github.com/lokesh-kumar-m/projectX"}
+                    ponits={["Registser new users and Authenticate users with JWT","Split your bills and maintain debts","Git, Spring, MySql, Docker, React, RESTApi, Postman"]}
+                />
 
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Git, JavaScript, Java, SonarCloud
-                                    </p>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="projects__content">
-                    <div>
-                        <i className="uil uil-folder-open project__icon"></i>
-                        <h3 className="project__title">
-                            Things to do
-                        </h3>
-                    </div>
-                    <span className="project__button" onClick={() => toggleTab(2)}>
-                        Read More{" "}
-                        <i className="uil uil-arrow-right project__button-icon"></i>
-                    </span>
-
-                    <div className={toggle === 2 ? "project__modal active-modal" : "project__modal"}>
-                        <div className="project__modal-content">
-                            <i className="uil uil-times project__modal-close" onClick={() => toggleTab(0)}></i>
-                            <h3 className="project__modal-title"> A Todo application</h3>
-                            <p className="project__modal-description">
-                                A task management application designed to help users keep track of their to-do
-                                lists using virtual notes. The application provides users to create new notes,
-                                update old ones and also delete a note.
-                            </p>
-                            <ul className="project__modal-services grid">
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-code-branch project__modal-icon">
-                                    </i>
-                                    <a href="https://github.com/lokesh-kumar-m/Springweb" className="project__modal-info">
-                                        GitHub code link
-                                    </a>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Spring boot, docker, MySql
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="projects__content">
-                    <div>
-                        <i className="uil uil-folder-open project__icon"></i>
-                        <h3 className="project__title">
-                            Catering Expenditure System
-                        </h3>
-                    </div>
-                    <span className="project__button" onClick={() => toggleTab(3)}>
-                        Read More{" "}
-                        <i className="uil uil-arrow-right project__button-icon"></i>
-                    </span>
-
-                    <div className={toggle === 3 ? "project__modal active-modal" : "project__modal"}>
-                        <div className="project__modal-content">
-                            <i className="uil uil-times project__modal-close" onClick={() => toggleTab(0)}></i>
-                            <h3 className="project__modal-title"> Catering Expenditure System</h3>
-                            <p className="project__modal-description">
-                                Developed an intelligent decision support system utilizing machine learning techniques to predict catering 
-                                expenditure, estimate food wastage, and optimize food preparation quantities.
-                            </p>
-                            <ul className="project__modal-services grid">
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Scrum Master, Developer
-                                    </p>
-                                </li>
-
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                        PowerBI, Machine learning, Trello board
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="projects__content">
-                    <div>
-                        <i className="uil uil-folder-open project__icon"></i>
-                        <h3 className="project__title">
-                            Banking Application
-                        </h3>
-                    </div>
-                    <span className="project__button" onClick={() => toggleTab(4)}>
-                        Read More{" "}
-                        <i className="uil uil-arrow-right project__button-icon"></i>
-                    </span>
-
-                    <div className={toggle === 4 ? "project__modal active-modal" : "project__modal"}>
-                        <div className="project__modal-content">
-                            <i className="uil uil-times project__modal-close" onClick={() => toggleTab(0)}></i>
-                            <h3 className="project__modal-title">Banking Application</h3>
-                            <p className="project__modal-description">
-                                An application offering banking services including account balance retrieval, 
-                                money withdrawal, and depositing, all secured with user authentication.
-                            </p>
-                            <ul className="project__modal-services grid">
-                                <li className="project__modal-service">
-                                    <i className="uil uil-code-branch project__modal-icon">
-                                    </i>
-                                    <a href="https://github.com/lokesh-kumar-m/bank" className="project__modal-info">
-                                        GitHub code link
-                                    </a>
-                                </li>
-                                <li className="project__modal-service">
-                                    <i className="uil uil-check-circle project__modal-icon">
-                                    </i>
-                                    <p className="project__modal-info">
-                                        Java Swings, MySql, Docker
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <Project
+                    title={"Catering Expenditure System"}
+                    toggleTab={toggleTab}
+                    num={3}
+                    toggle={toggle}
+                    desc={" Developed an intelligent decision support system utilizing machine learning techniques to predict catering expenditure, estimate food wastage, and optimize food preparation quantities."}
+                    link={""}
+                    ponits={[" Scrum Master, Developer","Data Visualisation","PowerBI, Machine learning, Trello board"]}
+                />
+                {/* title,toggleTab,num,toggle,desc,link,ponits */}
+                <Project
+                    title={"Banking Application"}
+                    toggleTab={toggleTab}
+                    num={4}
+                    toggle={toggle}
+                    desc={"An application offering banking services including account balance retrieval, money withdrawal, and depositing, all secured with user authentication."}
+                    link={"https://github.com/lokesh-kumar-m/bank"}
+                    ponits={["Java Swings, MySql, Docker"]}
+                />
 
             </div>
         </section>

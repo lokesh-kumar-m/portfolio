@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Info from "./Info";
 
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/cv.pdf";
+// import CV from "../../assets/cv.pdf";
+import Coding from "../../assets/wrk.png"
+import Design from "../../assets/dsin.png"
+import Games from "../../assets/gme.png"
+
+const CV="https://www.dropbox.com/scl/fi/hwa9wlew3cwy2m0sso1cb/Resume-4.pdf?rlkey=a9w54tj9c777esqt6c0b4p66w&dl=0"
 
 const About= () =>{
+    const [flag,setFlag]=useState(0)
+
     return(
         <section className="about section" id="about">
             <h2 className="section__title">About Me</h2>
@@ -15,14 +22,104 @@ const About= () =>{
                 <img src={AboutImg} alt="" className="about__img" />
                 <div className="about__data"> 
                     <Info/>
-                     <p className="about__description">
-                        Fullstack developer, I create webpages with UI / UX
-                        user interface.
-                     </p>
-                     <a download="" href={CV} className="button button--flex">
+                    
+                    <div className="about__info grid">
+                        <div className="interests__box" onClick={()=>setFlag(1)}>
+                            <img src={Coding} alt="" />
+                        </div>
+                        <div className={flag==1? "interest__modal Coding__interest":" interest__modal"}>
+                            <div className="interest__card">
+                                <span className="card__close" onClick={()=>setFlag(0)}><i className="uil uil-times-circle"></i></span>
+                                <div className="card__part-1">
+                                    {/* <span className="emoji-1">&#129300;</span>
+                                    <span className="emoji-2">&#129488;</span>
+                                    <span className="emoji-3">&#129327;</span> */}
+                                    <h3 className="about__title"></h3>
+                                    <img src={Coding} alt="" />
+                                </div>
+                                <div className="card__part-2">
+                                    <ul className="coding__interest-list">
+                                        <li className="">
+                                        <i className="uil uil-check-circle"></i> I enjoy Coding and problem solving.
+                                        </li>
+                                        <li>
+                                        <i className="uil uil-check-circle"></i> Excited about learning new things and gaining knowledge.
+                                        </li>
+                                        <li>
+                                        <i className="uil uil-check-circle"></i> Quick learner and work well with fast paced team.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="interests__box" onClick={()=>setFlag(2)}>
+                            <img src={Design} alt="" />
+                        </div>
+                                
+
+                        <div className={flag==2? "interest__modal Coding__interest":" interest__modal"}>
+                            <div className="interest__card">
+                                <span className="card__close" onClick={()=>setFlag(0)}><i className="uil uil-times-circle"></i></span>
+                                <div className="card__part-1">
+                                    {/* <span className="emoji-1">&#129300;</span>
+                                    <span className="emoji-2">&#129488;</span>
+                                    <span className="emoji-3">&#129327;</span> */}
+                                    <h3 className="about__title"></h3>
+                                    <img src={Design} alt="" />
+                                </div>
+                                <div className="card__part-2">
+                                    <ul className="coding__interest-list">
+                                        <li className="">
+                                        <i className="uil uil-check-circle"></i> Creative individual.
+                                        </li>
+                                        <li>
+                                        <i className="uil uil-check-circle"></i> I love travelling, photography and exploring new places.
+                                        </li>
+                                        <li>
+                                        <i className="uil uil-check-circle"></i> Voluntered as graphpic designer and organiser.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="interests__box" onClick={()=>setFlag(3)}>
+                            <img src={Games} alt="" />
+                        </div>
+
+                        <div className={flag==3? "interest__modal Coding__interest":" interest__modal"}>
+                            <div className="interest__card">
+                                <span className="card__close" onClick={()=>setFlag(0)}><i className="uil uil-times-circle"></i></span>
+                                <div className="card__part-1">
+                                    {/* <span className="emoji-1">&#129300;</span>
+                                    <span className="emoji-2">&#129488;</span>
+                                    <span className="emoji-3">&#129327;</span> */}
+                                    <h3 className="about__title"></h3>
+                                    <img src={Games} alt="" />
+                                </div>
+                                <div className="card__part-2">
+                                    <ul className="coding__interest-list">
+                                        <li className="">
+                                        <i className="uil uil-check-circle"></i> I play badminton, and volleyball.
+                                        </li>
+                                        <li>
+                                        <i className="uil uil-check-circle"></i> Discussing Anime, Sci-fi movies/Series? Count me in!
+                                        </li>
+                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p className="about__description">
+                        A developer, actively seeking an opportunity to contribute and shape the future.
+                    </p>
+                    <a download="" target="_blank"  href={CV} className="button button--flex">
                         Download CV
                         <i className="uil uil-file-download-alt"></i>
-                     </a>
+                    </a>
+
                 </div>
             </div>
         </section>
