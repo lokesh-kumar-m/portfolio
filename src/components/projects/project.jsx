@@ -23,7 +23,7 @@ const Project = ({title,toggleTab,num,toggle,desc,link,ponits}) => {
                         {link!=""?<li className="project__modal-service">
                             <i className="uil uil-code-branch project__modal-icon">
                             </i>
-                            <a href={link} className="project__modal-info">
+                            <a href={link} target="_blank"  className="project__modal-info">
                                 GitHub link
                             </a>
                         </li>:""}
