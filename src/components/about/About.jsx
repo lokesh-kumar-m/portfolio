@@ -100,10 +100,23 @@ const About= () =>{
                                 <div className="card__part-2">
                                     <ul className="coding__interest-list">
                                         <li className="">
-                                        <i className="uil uil-check-circle"></i> I play badminton, and volleyball.
+                                            <i className="uil uil-check-circle"></i> I play badminton, and volleyball.
                                         </li>
+                                        
                                         <li>
-                                        <i className="uil uil-check-circle"></i> Discussing Anime, Sci-fi movies/Series? Count me in!
+                                            <i className="uil uil-check-circle"></i> Enjoy pop music, fav artists: Post Malone, Khalid
+                                        </li>
+
+                                        <li>
+                                            <i className="uil uil-check-circle"></i> Play mobile legends bang bang under the name "Gypsy"
+                                        </li>
+                                        
+                                        <li>
+                                            <i className="uil uil-check-circle"></i> Discussing Anime, Sci-fi movies/Series? Count me in!
+                                        </li>
+
+                                        <li>
+                                            <i className="uil uil-check-circle"></i> Most watched series: Chernobyl
                                         </li>
                     
                                     </ul>
