@@ -131,7 +131,7 @@ const About= () =>{
                     <p className="about__description">
                         A developer, actively seeking an opportunity to contribute and shape the future.
                     </p>
-                    <a download=""  href={CV} className="button button--flex">
+                    <a download="" target="_blank" rel="noopener noreferrer"  href={CV} className="button button--flex">
                         Download CV
                         <i className="uil uil-file-download-alt"></i>
                     </a>
