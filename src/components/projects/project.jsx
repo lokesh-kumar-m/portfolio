@@ -20,10 +20,10 @@ const Project = ({title,toggleTab,num,toggle,desc,link,ponits}) => {
                         {desc}
                     </p>
                     <ul className="project__modal-services grid">
-                        {link!=""?<li className="project__modal-service">
+                        {link!==""?<li className="project__modal-service">
                             <i className="uil uil-code-branch project__modal-icon">
                             </i>
-                            <a href={link} target="_blank"  className="project__modal-info">
+                            <a href={link}  className="project__modal-info">
                                 GitHub link
                             </a>
                         </li>:""}

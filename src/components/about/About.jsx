@@ -27,14 +27,15 @@ const About= () =>{
                         <div className="interests__box" onClick={()=>setFlag(1)}>
                             <img src={Coding} alt="" />
                         </div>
-                        <div className={flag==1? "interest__modal Coding__interest":" interest__modal"}>
+                        <div className={flag===1? "interest__modal Coding__interest":" interest__modal"}>
                             <div className="interest__card">
                                 <span className="card__close" onClick={()=>setFlag(0)}><i className="uil uil-times-circle"></i></span>
                                 <div className="card__part-1">
                                     {/* <span className="emoji-1">&#129300;</span>
                                     <span className="emoji-2">&#129488;</span>
                                     <span className="emoji-3">&#129327;</span> */}
-                                    <h3 className="about__title"></h3>
+                                    <h2 className="about__title">Career</h2>
+                                    <br />
                                     <img src={Coding} alt="" />
                                 </div>
                                 <div className="card__part-2">
@@ -57,14 +58,15 @@ const About= () =>{
                         </div>
                                 
 
-                        <div className={flag==2? "interest__modal Coding__interest":" interest__modal"}>
+                        <div className={flag===2? "interest__modal Coding__interest":" interest__modal"}>
                             <div className="interest__card">
                                 <span className="card__close" onClick={()=>setFlag(0)}><i className="uil uil-times-circle"></i></span>
                                 <div className="card__part-1">
                                     {/* <span className="emoji-1">&#129300;</span>
                                     <span className="emoji-2">&#129488;</span>
                                     <span className="emoji-3">&#129327;</span> */}
-                                    <h3 className="about__title"></h3>
+                                    <h2 className="about__title">Hobbies and Interests</h2>
+                                    <br />
                                     <img src={Design} alt="" />
                                 </div>
                                 <div className="card__part-2">
@@ -87,14 +89,15 @@ const About= () =>{
                             <img src={Games} alt="" />
                         </div>
 
-                        <div className={flag==3? "interest__modal Coding__interest":" interest__modal"}>
+                        <div className={flag===3? "interest__modal Coding__interest":" interest__modal"}>
                             <div className="interest__card">
                                 <span className="card__close" onClick={()=>setFlag(0)}><i className="uil uil-times-circle"></i></span>
                                 <div className="card__part-1">
                                     {/* <span className="emoji-1">&#129300;</span>
                                     <span className="emoji-2">&#129488;</span>
                                     <span className="emoji-3">&#129327;</span> */}
-                                    <h3 className="about__title"></h3>
+                                    <h2 className="about__title">Entertainment</h2>
+                                    <br />
                                     <img src={Games} alt="" />
                                 </div>
                                 <div className="card__part-2">
@@ -128,7 +131,7 @@ const About= () =>{
                     <p className="about__description">
                         A developer, actively seeking an opportunity to contribute and shape the future.
                     </p>
-                    <a download="" target="_blank"  href={CV} className="button button--flex">
+                    <a download=""  href={CV} className="button button--flex">
                         Download CV
                         <i className="uil uil-file-download-alt"></i>
                     </a>
