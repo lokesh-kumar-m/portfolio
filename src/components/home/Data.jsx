@@ -57,7 +57,7 @@ const Data = ()=>{
             </h1>
             <h3 className="home__subtitle">Software Developer</h3>
             <p className="home__description">I'm a passionate and creative software developer 
-            based in Sweden. My enthusiasm for crafting innovative solutions drives me to constantly 
+            based in Hyderabad. My enthusiasm for crafting innovative solutions drives me to constantly 
             push the boundaries of what's possible in the digital realm.</p>
             <a href="#contact" className="button button--flex">
                 <span className="hello">Hello</span>
