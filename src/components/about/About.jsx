@@ -8,8 +8,7 @@ import Coding from "../../assets/wrk.png"
 import Design from "../../assets/dsin.png"
 import Games from "../../assets/gme.png"
 
-const CV="https://www.dropbox.com/scl/fi/hwa9wlew3cwy2m0sso1cb/Resume-4.pdf?rlkey=a9w54tj9c777esqt6c0b4p66w&dl=0"
-
+const CV=" https://drive.google.com/file/d/15fGuR-JgwLwtlOlK9gOUMrA5gsgKL_8C/view?usp=drivesdk"
 const About= () =>{
     const [flag,setFlag]=useState(0)
 
