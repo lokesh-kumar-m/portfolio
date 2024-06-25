@@ -41,7 +41,7 @@ const Contact= () =>{
                         <i className="uil uil-outgoing-call"></i>
 
                         <h3 className="contact__card-title">Contact number</h3>
-                        <span className="contact__card-data">0793573521</span>
+                        <span className="contact__card-data">9346135729</span>
                         
                     </div>
                 </div>
